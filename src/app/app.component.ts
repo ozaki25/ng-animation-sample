@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { slideInAnimation } from './animations';
 
 @Component({
   selector: 'app-root',
   template: `
     <h1>Hello</h1>
-    <ng-container [@routeAnimations]="prepareRoute(outlet)">
+    <div [@routeAnimations]="prepareRoute(outlet)">
       <router-outlet #outlet="outlet"></router-outlet>
-    </ng-container>
+    </div>
   `,
   styles: [],
+  animations: [slideInAnimation],
 })
 export class AppComponent {
   title = 'ng-animation-sample';

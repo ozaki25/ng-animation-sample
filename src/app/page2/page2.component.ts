@@ -23,7 +23,6 @@ import { Component, OnInit } from '@angular/core';
       </p>
     </main>
   `,
-  styles: [],
 })
 export class Page2Component implements OnInit {
   constructor() {}
