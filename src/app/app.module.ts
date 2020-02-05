@@ -1,4 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,17 +10,9 @@ import { Page2Component } from './page2/page2.component';
 import { Page3Component } from './page3/page3.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    Page1Component,
-    Page2Component,
-    Page3Component
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, Page1Component, Page2Component, Page3Component],
+  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
