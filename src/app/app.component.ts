@@ -5,12 +5,10 @@ import { slideInAnimation } from './animations';
 @Component({
   selector: 'app-root',
   template: `
-    <h1>Hello</h1>
     <div [@routeAnimations]="prepareRoute(outlet)">
       <router-outlet #outlet="outlet"></router-outlet>
     </div>
   `,
-  styles: [],
   animations: [slideInAnimation],
 })
 export class AppComponent {
